@@ -35,5 +35,5 @@ function students1() {
     age: student4.age,
   };
 }
-
-console.log(students());
+// console.log(students1());
+// 6
