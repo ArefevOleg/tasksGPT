@@ -7,5 +7,5 @@ for (let i = 0; i < 10; i++) {
     let randomNumber = Math.floor(Math.random() * 100); // Генерируем случайное число от 0 до 99
     randomArray.push(randomNumber); // Добавляем случайное число в массив
 }
-//console.log(randomArray); // Выводим массив случайных чисел в консоль
+// console.log(randomArray); // Выводим массив случайных чисел в консоль
 // 2.

@@ -1,5 +1,6 @@
 import './App.css';
 import './array/solutionArray'
+import './conditions/solutionObjectsIfElse'
 
 function App() {
   return (
