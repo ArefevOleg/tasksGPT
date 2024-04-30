@@ -1,9 +1,11 @@
 
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// Создаем пустой массив
+let randomArray = [];
 
-const squares = nums.map(function (num) {
-  return num * num
-})
+// Заполняем массив случайными числами от 0 до 99 (можно изменить диапазон по вашему усмотрению)
+for (let i = 0; i < 10; i++) {
+    let randomNumber = Math.floor(Math.random() * 100); // Генерируем случайное число от 0 до 99
+    randomArray.push(randomNumber); // Добавляем случайное число в массив
+}
 
-console.log(squares)
-// [1, 4, 9, 16, 25, 36, 49, 64, 81]
+console.log(randomArray); // Выводим массив случайных чисел в консоль
