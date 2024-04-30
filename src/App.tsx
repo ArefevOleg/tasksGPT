@@ -1,6 +1,5 @@
 import './App.css';
-
-
+import './array/solutionArray'
 
 function App() {
   return (
