@@ -27,6 +27,76 @@ let name = "John"; //string
 const age = 30; //number
 var isStudent = true; // boolean
 ```
+`boolean`
+
+Булевые значения в `JavaScript` представляют собой тип данных, который может иметь только два возможных значения: `true` (истина) или `false` (ложь). Они часто используются в логических выражениях, условных операторах и других контекстах, где необходимо представить логическое состояние или результат проверки. Вот несколько примеров булевых значений:
+
+Примеры использования булевых значений:
+
+1. Присвоение переменной значения `true` или `false`:
+
+```JavaScript
+let isLogged = true;
+let isAdmin = false;
+
+console.log(isLogged); // Выведет true в консоль
+console.log(isAdmin); // Выведет false в консоль
+```
+2. Результаты логических операций:
+```JavaScript
+let age = 25;
+let isAdult = age >= 18; // Результат сравнения
+
+console.log(isAdult); // Выведет true в консоль, так как age >= 18
+```
+3. Результаты сравнения:
+```JavaScript
+let a = 10;
+let b = 5;
+
+let isEqual = a === b; // Результат сравнения
+
+console.log(isEqual); // Выведет false в консоль, так как a не равно b
+```
+4. Результаты выполнения логических операторов:
+```JavaScript
+let hasPermission = true;
+let isLoggedIn = false;
+
+let canAccess = hasPermission && isLoggedIn; // Логическое И (AND)
+
+console.log(canAccess); // Выведет false в консоль, так как один из операндов false
+
+```
+
+5. Использование булевых значений в условных операторах:
+```JavaScript
+let isMorning = true;
+
+if (isMorning) {
+    console.log("Доброе утро!");
+} else {
+    console.log("Добрый день!");
+}
+```
+6. Возвращаемое значение из функций:
+
+
+```JavaScript
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+let result1 = isEven(4); // true, потому что 4 - чётное число
+let result2 = isEven(7); // false, потому что 7 - нечётное число
+
+console.log(result1); // Выведет true в консоль
+console.log(result2); // Выведет false в консоль
+
+```
+Булевые значения являются фундаментальной частью языка JavaScript и широко используются для управления логикой программы, контроля выполнения операций и принятия решений на основе определенных условий.
+
+
 
 `2. Операторы (Operators) и Выражения (Expressions):`
 
