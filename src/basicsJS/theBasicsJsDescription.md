@@ -410,3 +410,80 @@ if (isEven(num)) {
 Если остаток равен 0, функция возвращает true (число чётное), иначе возвращает false (число нечётное).
 После определения функции, мы вызываем её с числом 7 (isEven(7);) и используем результат для вывода сообщения в консоль.
 Это простые примеры функций в JavaScript, которые демонстрируют основные концепции создания функций, передачи параметров, выполнения операций и возвращения результатов. Функции очень полезны для организации кода и повторного использования логики.
+
+В `JavaScript` существует несколько `синтаксических форм функций`, которые могут быть использованы в зависимости от конкретных потребностей и стандартов языка. Вот основные способы определения функций в JavaScript:
+
+1. Объявление функции (Function Declaration):
+```JavaScript
+function greet(name) {
+    return "Привет, " + name + "!";
+}
+console.log(greet("Анна")); // Выведет "Привет, Анна!" в консоль
+
+```
+
+2. Выражение функции (Function Expression):
+
+```JavaScript
+let greet = function(name) {
+    return "Привет, " + name + "!";
+};
+console.log(greet("Марк")); // Выведет "Привет, Марк!" в консоль
+
+```
+3. Стрелочные функции (Arrow Functions) - синтаксис ES6:
+```JavaScript
+let greet = (name) => {
+    return "Привет, " + name + "!";
+};
+console.log(greet("Елена")); // Выведет "Привет, Елена!" в консоль
+```
+
+4. Функции как методы объекта (Object Methods):
+```JavaScript
+let person = {
+    firstName: "Иван",
+    lastName: "Иванов",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+console.log(person.fullName()); // Выведет "Иван Иванов" в консоль
+```
+
+5. Функции как конструкторы (Constructor Functions):
+```JavaScript
+
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = function() {
+        return this.firstName + " " + this.lastName;
+    };
+}
+
+let person1 = new Person("Петр", "Петров");
+console.log(person1.fullName()); // Выведет "Петр Петров" в консоль
+
+```
+
+6. Функции как методы класса (Class Methods) - синтаксис ES6:
+
+```JavaScript
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    getArea() {
+        return this.width * this.height;
+    }
+}
+
+let rectangle = new Rectangle(5, 3);
+console.log(rectangle.getArea()); // Выведет 15 в консоль
+
+```
+
+Эти различные синтаксические формы позволяют определять функции в JavaScript с разными подходами и для различных целей: от простых функций до методов объектов, конструкторов, стрелочных функций и методов классов. Выбор способа определения функции зависит от контекста и требований вашего приложения или проекта.
