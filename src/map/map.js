@@ -52,4 +52,4 @@ const updatedProducts = products.map((product) => {
   };
 });
 
-console.log(updatedProducts);
+// console.log(updatedProducts);
