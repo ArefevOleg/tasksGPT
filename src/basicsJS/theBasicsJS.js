@@ -53,7 +53,14 @@ function isPrime(numb) {
 }
 
 // Примеры вызова функции isPrime для тестирования
-console.log(isPrime(7)); // true, 7 - простое число
-console.log(isPrime(6)); // false, 6 - составное число
-console.log(isPrime(1)); // false, 1 не является простым числом
-console.log(isPrime(13)); // true, 13 - простое число
+//console.log(isPrime(7)); // true, 7 - простое число
+//console.log(isPrime(6)); // false, 6 - составное число
+//console.log(isPrime(1)); // false, 1 не является простым числом
+//console.log(isPrime(13)); // true, 13 - простое число
+
+// 9. 
+function countVowels(name) {
+  const matches = name.match();
+  return console.log(matches);
+}
+const simplText = countVowels('Ekaterina')
