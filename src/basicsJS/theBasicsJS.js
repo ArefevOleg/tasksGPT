@@ -59,8 +59,3 @@ function isPrime(numb) {
 //console.log(isPrime(13)); // true, 13 - простое число
 
 // 9. 
-function countVowels(name) {
-  const matches = name.match();
-  return console.log(matches);
-}
-const simplText = countVowels('Ekaterina')
