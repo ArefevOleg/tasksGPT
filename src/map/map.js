@@ -53,3 +53,9 @@ const updatedProducts = products.map((product) => {
 });
 
 // console.log(updatedProducts);
+
+let numbers1 =[1, 2, 4, 7, 10, 332, 0, 232]
+
+const newArr = numbers1.map((el) => el === 7 ? el = 3 : el)
+
+// console.log(newArr );
