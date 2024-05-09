@@ -2,6 +2,7 @@
 const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = numbers.map((num) => num * 2);
 // console.log(doubledNumbers);
+
 // 2.
 const names = ["Oleg", "Ekaterina", "Egor", "Ira"]
 // Используем метод map для преобразования каждой строки в длину этой строки
@@ -15,6 +16,7 @@ const lengthOfNames = names.map((name) => name.length);
 // Длина строки "Ekaterina" равна 9.
 // Длина строки "Egor" равна 4.
 // Длина строки "Ira" равна 3.
+
 // 3.
 const auto = ["LADA", "HONDA", "KIA", "AUDI"]
 const stringtoUpperCase = auto.map((name) => name.toLowerCase());
@@ -26,6 +28,7 @@ const stringtoUpperCase = auto.map((name) => name.toLowerCase());
 // "HONDA" преобразуется в "honda".
 // "KIA" преобразуется в "kia".
 // "AUDI" преобразуется в "audi".
+
 // 4. 
 const numbers1 = [123, 212, 345, 5534, 52345];
 const stringToString = numbers1.map((num) => num.toString())
@@ -38,5 +41,23 @@ const stringToString = numbers1.map((num) => num.toString())
 // 345 преобразуется в "345".
 // 5534 преобразуется в "5534".
 // 52345 преобразуется в "52345".
+
 // 5.
 const objArray = [{id: 1, date: 22}, {id: 2, date: 56}, {id: 3, date: 48}];
+// Используем метод map для извлечения значений свойства 'id' из каждого объекта
+const arr = objArray.map((object) => object.id)
+// console.log(arr);
+
+// 6.
+const sityname = ["Moscov", "london", "Tokio", "NewYork"]
+const sity = sityname.map((name) => name[0]);
+// console.log(sity);
+// map - метод массива, который применяет функцию обратного вызова ко всем элементам массива.
+// (name) => name[0] - коллбэк функция, которая принимает каждую строку из массива sityname (переменная name) и возвращает первый символ этой строки (name[0]).
+// Результат выполнения метода map будет новый массив sity, содержащий первые буквы каждой строки из исходного массива sityname:
+// "Moscov" преобразуется в "M" (первая буква).
+// "london" преобразуется в "l" (первая буква).
+// "Tokio" преобразуется в "T" (первая буква).
+// "NewYork" преобразуется в "N" (первая буква).
+
+// 7.
