@@ -1,10 +1,10 @@
-// 1. 
+// 1.
 const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = numbers.map((num) => num * 2);
 // console.log(doubledNumbers);
 
 // 2.
-const names = ["Oleg", "Ekaterina", "Egor", "Ira"]
+const names = ["Oleg", "Ekaterina", "Egor", "Ira"];
 // Используем метод map для преобразования каждой строки в длину этой строки
 const lengthOfNames = names.map((name) => name.length);
 // console.log(lengthOfNames); // Вывод: [4, 9, 4, 3]
@@ -18,7 +18,7 @@ const lengthOfNames = names.map((name) => name.length);
 // Длина строки "Ira" равна 3.
 
 // 3.
-const auto = ["LADA", "HONDA", "KIA", "AUDI"]
+const auto = ["LADA", "HONDA", "KIA", "AUDI"];
 const stringtoUpperCase = auto.map((name) => name.toLowerCase());
 // console.log(stringtoUpperCase);
 // map - метод массива, который применяет функцию обратного вызова ко всем элементам массива.
@@ -29,9 +29,9 @@ const stringtoUpperCase = auto.map((name) => name.toLowerCase());
 // "KIA" преобразуется в "kia".
 // "AUDI" преобразуется в "audi".
 
-// 4. 
+// 4.
 const numbers1 = [123, 212, 345, 5534, 52345];
-const stringToString = numbers1.map((num) => num.toString())
+const stringToString = numbers1.map((num) => num.toString());
 // console.log(stringToString);
 // map - метод массива, который применяет функцию обратного вызова ко всем элементам массива.
 // (num) => num.toString() - коллбэк функция, которая принимает каждое число из массива numbers1 (переменная num) и преобразует его в строковое представление с помощью метода toString().
@@ -43,13 +43,17 @@ const stringToString = numbers1.map((num) => num.toString())
 // 52345 преобразуется в "52345".
 
 // 5.
-const objArray = [{id: 1, date: 22}, {id: 2, date: 56}, {id: 3, date: 48}];
+const objArray = [
+  { id: 1, date: 22 },
+  { id: 2, date: 56 },
+  { id: 3, date: 48 },
+];
 // Используем метод map для извлечения значений свойства 'id' из каждого объекта
-const arr = objArray.map((object) => object.id)
+const arr = objArray.map((object) => object.id);
 // console.log(arr);
 
 // 6.
-const sityname = ["Moscov", "london", "Tokio", "NewYork"]
+const sityname = ["Moscov", "london", "Tokio", "NewYork"];
 const sity = sityname.map((name) => name[0]);
 // console.log(sity);
 // map - метод массива, который применяет функцию обратного вызова ко всем элементам массива.
@@ -61,3 +65,29 @@ const sity = sityname.map((name) => name[0]);
 // "NewYork" преобразуется в "N" (первая буква).
 
 // 7.
+const numbers2 = [1, 3, 5, 7, 5, 9];
+const objNumbers = numbers2.map((number, isEven) => ({ number, isEven: true }));
+// console.log(objNumbers);
+
+// 8.
+const objName = [
+  { age: 39, name: "Oleg" },
+  { age: 22, name: "Egor" },
+  { age: 34, name: "Viktor" },
+];
+const newObjName = objName.map((obj) => obj.name);
+// console.log(newObjName);
+// map - метод массива, который применяет функцию обратного вызова ко всем элементам массива.
+// (obj) => obj.name - коллбэк функция, которая принимает каждый объект из массива objName (переменная obj) и возвращает значение его свойства name.
+// Результат выполнения метода map будет новый массив newObjName, содержащий значения свойства name из каждого объекта исходного массива objName:
+
+// { age: 39, name: "Oleg" } преобразуется в "Oleg" (значение свойства name).
+// { age: 22, name: "Egor" } преобразуется в "Egor" (значение свойства name).
+// { age: 34, name: "Viktor" } преобразуется в "Viktor" (значение свойства name).
+
+// 9.
+const dateArr = ['22', '33', '44'];
+const newDate = dateArr.map((num) => Number(num))
+console.log(newDate);
+
+// 10.
