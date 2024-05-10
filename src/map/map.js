@@ -88,6 +88,15 @@ const newObjName = objName.map((obj) => obj.name);
 // 9.
 const dateArr = ['22', '33', '44'];
 const newDate = dateArr.map((num) => Number(num))
-console.log(newDate);
+// console.log(newDate);
 
 // 10.
+// function differenceInAges(ages){
+// return ages.map(())
+// }
+
+// const ages = [0, 34, 56, 87]
+
+const rtr = [1, 2, 3, 4, 5, 56]
+const newRtr = rtr.map((num) => num + '!')
+console.log(newRtr);
