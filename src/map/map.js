@@ -98,5 +98,5 @@ const newDate = dateArr.map((num) => Number(num))
 // const ages = [0, 34, 56, 87]
 
 const rtr = [1, 2, 3, 4, 5, 56]
-const newRtr = rtr.map((num) => num + '!')
+const newRtr = rtr.map((num) => num * 2 + "?")
 console.log(newRtr);
