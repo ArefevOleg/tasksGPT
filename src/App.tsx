@@ -8,8 +8,8 @@ import { Td } from "./td";
 function App() {
   return (
     <div>
-      <Td title=" search"/>
-      <Td title=" search"/>
+      <Td name="search"/>
+      <Td name="fbdfbd"/>
     </div>
   );
 }
