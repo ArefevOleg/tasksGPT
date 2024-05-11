@@ -2,6 +2,7 @@ import "./App.css";
 import "./array/solutionArray";
 import "./conditions/solutionObjectsIfElse";
 import "../src/basicsJS/theBasicsJS";
+import styled from 'styled-components'
 import "./map/map";
 import { Books } from "./books";
 
@@ -28,11 +29,17 @@ const booksListTwo: BooksType[] = [
 
 function App() {
   return (
-    <div>
+    <AppWrapper>
     <Books title="List one"/>
     <Books title="List two"/>
-    </div>
+    </AppWrapper>
   );
 }
 
 export default App;
+
+
+const AppWrapper = styled.div`
+  display: flex;  
+  gap: 50px;
+`
