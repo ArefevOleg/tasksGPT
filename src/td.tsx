@@ -1,24 +1,27 @@
-
-const tasks  = [
-  { id: 1, title: "Hello world", isDone: true },
-  { id: 2, title: "I am Happy", isDone: false },
-  { id: 3, title: "Yo", isDone: false },
-  { id: 4, title: 'Redux', isDone: false },
+const arr = [
+  { id: 1, name: "Oleg", age: 39, isDone: true },
+  { id: 2, name: "Ira", age: 37, isDone: false},
+  { id: 3, name: "Ekaterina", age: 35, isDone: true },
 ];
 
-export const Td = () => {
+type PropsType = {
+ title: string
+}
+
+
+export const Td = ({title}: PropsType ) => {
   return (
-    <div>
-      <ul>
-        {tasks.map(task => {
-          return (
-            <li>
-              <input type="checkbox" checked={task.isDone} />
-              <span>{task.title}</span>
-            </li>
-          )
-        })}
-      </ul>
-    </div>
+<div> 
+<ul>
+  {arr.map(() => {
+    return (
+      <li>
+    <input type="text" />
+    <span>{title}</span>
+  </li>
+    )
+  })}
+</ul>
+</div>
   );
 };
