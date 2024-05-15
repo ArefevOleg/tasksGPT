@@ -60,3 +60,21 @@ function isPrime(number) {
 function countVowels() {
   
 }
+
+// Получаем кнопку и элемент для отображения счётчика
+const incrementButton = document.getElementById('incrementButton');
+const counterElement = document.getElementById('counter');
+
+// Устанавливаем начальное значение счётчика
+let count = 0;
+
+// Добавляем обработчик события при клике на кнопку
+incrementButton.addEventListener('click', () => {
+    // Увеличиваем значение счётчика на 1
+    count++;
+
+    // Обновляем текст элемента с текущим значением счётчика
+    counterElement.textContent = count;
+});
+
+
