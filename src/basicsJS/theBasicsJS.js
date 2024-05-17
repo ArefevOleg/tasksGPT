@@ -57,24 +57,26 @@ function isPrime(number) {
 // console.log(isPrime(1)); // Выведет false, так как 1 не является простым числом
 // console.log(isPrime(17)); // Выведет true, так как 17 - простое число
 // 9.
-function countVowels() {
+// function countVowels() {
   
-}
-
-// Получаем кнопку и элемент для отображения счётчика
-const incrementButton = document.getElementById('incrementButton');
-const counterElement = document.getElementById('counter');
-
-// Устанавливаем начальное значение счётчика
-let count = 0;
-
-// Добавляем обработчик события при клике на кнопку
-incrementButton.addEventListener('click', () => {
-    // Увеличиваем значение счётчика на 1
-    count++;
-
-    // Обновляем текст элемента с текущим значением счётчика
-    counterElement.textContent = count;
-});
+// }
 
 
+
+// Этот код представляет собой две стрелочные функции в JavaScript, которые используются для управления значением счетчика.
+
+// Эта функция увеличивает значение счетчика на 1 каждый раз, когда она вызывается. Она делает это, вызывая функцию 
+// setCounter() с новым значением, которое на 1 больше текущего значения счетчика.
+const onClickHandlerCouterIncrement =()=>{
+  setCounter(counter+1)};
+
+// Эта функция сбрасывает значение счетчика до 0 каждый раз, когда она вызывается. Она делает это, вызывая функцию setCounter() с новым значением 0.
+onClickHandlerCounterReset=()=>{setCounter(0)};
+
+// Функции названы onClickHandlerCounterIncrement и onClickHandlerCounterReset, потому что они, вероятно, предназначены для использования в качестве обработчиков событий клика (например, при клике на кнопки на веб-странице).
+
+
+console.log(onClickHandlerCouterIncrement);
+
+
+// Примечание: Предполагается, что setCounter - это функция, предоставленная хуком состояния React useState. Эта функция используется для обновления значения счетчика. Если этот код не выполняется в контексте компонента React, который использует useState, он не будет работать. Если это не код React, тогда setCounter должна быть функцией, определенной где-то в твоем коде, которая устанавливает новое значение для переменной counter.
