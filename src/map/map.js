@@ -84,11 +84,3 @@ const newObjName = objName.map((obj) => obj.name);
 // { age: 39, name: "Oleg" } преобразуется в "Oleg" (значение свойства name).
 // { age: 22, name: "Egor" } преобразуется в "Egor" (значение свойства name).
 // { age: 34, name: "Viktor" } преобразуется в "Viktor" (значение свойства name).
-
-// 9.
-const dateArr = ['22', '33', '44'];
-const newDate = dateArr.map((num) => Number(num))
-// console.log(newDate);
-
-// 10.
-
