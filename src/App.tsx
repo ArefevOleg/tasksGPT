@@ -5,6 +5,7 @@ import "../src/basicsJS/theBasicsJS";
 import styled from 'styled-components'
 import "./map/map";
 import { Books } from "./books";
+import "./script"
 
 function App() {
   return (

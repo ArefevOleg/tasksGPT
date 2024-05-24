@@ -277,9 +277,118 @@ const arr1 = [1,2,3,4,5];
 // });
 // console.log(filterArr)
 
-const array = [1,2,3,4,5]
+// const array = [1,2,3,4,5]
+//
+// const newArray = array.map(function(element) {
+//   return element + '0'
+// })
+// console.log(newArray )
 
-const newArray = array.map(function(element) {
-  return element + '0'
-})
-// console.log(newArray)
+const obj = {
+  name: "Jon",
+  address: {
+    country: "USA",
+    city: "Moscow",
+    street: {
+      title: "Hello",
+      dom: ["red", "black", "green"]
+    }
+  }
+}
+
+// console.log(obj.address.street.dom);
+// const  newObj = {
+//   ...obj,
+//   address: {
+//     ...obj.address,
+//     street: {
+//       ...obj.address.street,
+//       dom: obj.address.street.dom.map(el => {
+//         return (
+//           el === "red"
+//             ? "pink"
+//             : el)
+//       })
+//     }
+//   }
+// }
+
+// const obj3 = {
+//   name: "Jon",
+//   address: [1, 2, 3]
+// }
+//
+// const obj4 = {
+//   ...obj3,
+//   address: obj3.address.map(el => el + 1)
+// }
+
+
+//
+// console.log(obj);
+// console.log(newObj);
+// console.log(obj == newObj);
+//
+//
+//
+//
+// const arry =[1, 2, 3, 4];
+//
+// const arry1 = arry.map(el => {return 1})
+
+// console.log(arry);
+// console.log(arry1);
+// console.log(arry1 == arry);
+
+// const obj3 = {
+//   name: "Jon",
+//   address: [1, 2, 3]
+// }
+//
+// const obj4 = {
+//   ...obj3,
+//   address: obj3.address.map(el => el + 1)
+// }
+//
+// console.log(obj3);
+// console.log(obj4);
+
+
+
+
+const object = {
+  name: "Oleg",
+  street: {
+    title: "z bulvar",
+    dom: ["red", "blue"]
+  }
+}
+const newObject = {
+  ...object,
+}
+
+
+
+console.log(object);
+console.log(newObject);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
