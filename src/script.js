@@ -284,17 +284,17 @@ const arr1 = [1,2,3,4,5];
 // })
 // console.log(newArray )
 
-const obj = {
-  name: "Jon",
-  address: {
-    country: "USA",
-    city: "Moscow",
-    street: {
-      title: "Hello",
-      dom: ["red", "black", "green"]
-    }
-  }
-}
+// const obj = {
+//   name: "Jon",
+//   address: {
+//     country: "USA",
+//     city: "Moscow",
+//     street: {
+//       title: "Hello",
+//       dom: ["red", "black", "green"]
+//     }
+//   }
+// }
 
 // console.log(obj.address.street.dom);
 // const  newObj = {
@@ -353,24 +353,326 @@ const obj = {
 // console.log(obj3);
 // console.log(obj4);
 
+//
+// const object = {
+//   country: {
+//     name: ["Canada", "USA", "Belarus", "Russia"],
+//     region: {
+//       city: ["Toronto", "New York", "Minsk", "Moscow"],
+//       district: {
+//         street: ["Grant Street", "United States", "Lenina", "Blinova"],
+//         house: [1, 2, 3, 4, 5],
+//         houseColor: ["red", "black", "blue", "green"]
+//       }
+//     }
+//   }
+// }
+//
+// const newObject = {
+//   ...object,
+//   name: {
+//     ...object.country.name.find(el => el === "Canada")
+//   },
+//   city: {
+//     ...object.country.region.city.find(el => el === "Toronto")
+//   },
+//   street: {
+//     ...object.country.region.district.houseColor.find(el => el === "red")
+//   }
+// }
+//
+// console.log(object);
+// console.log(newObject);
+//
 
 
+// const newObject = {
+// ...object,
+//   name: {
+//     ...object.country.name.map(el => el === "Canada" ? "Poland" : el)
+//   },
+//   city: {
+//     ...object.country.region.city.map(el => el === "Toronto" ? "Varshava" : el)
+//   },
+//   street: {
+//     ...object.country.region.district.houseColor.map(el => el === "red" ? "pink" : el)
+//   }
+// }
 
-const object = {
-  name: "Oleg",
-  street: {
-    title: "z bulvar",
-    dom: ["red", "blue"]
-  }
-}
-const newObject = {
-  ...object,
-}
 
+// Задачи на закрепление ссылочного типа данных и spread оператора:
+//
+//   •	Без запуска кода проговорите что тут происходит и что будет в консоли
+//
+const a = {}; //1234
+const b = {};// 4321
+const c = a; //1234
+const d = c; //1234
+//
+console.log(a === b); // false
+// console.log(a === c); // true
+// console.log(c === d); // true
+// console.log(a === c); // true
+// 
+// 	•	Что будет в консоль логах, ответьте без запуска кода и ответьте на вопрос
+//
+//
+// const a = {};
+// const b = a;
+// b['test'] = 'test value';
+//
+// console.log(b === a);
+// console.log(a);
+// // смутриурет ли объект a?
+//
+//
+// •	У вас есть объект пользователя с информацией о его имени и адресе. Обновите значение города в адресе пользователя(сделайте это иммутабельно, используя spread оператор)
+//
+// Исходный объект и ожидаемый результат:
+//   const user = {
+//     name: 'John',
+//     address: {
+//       city: 'New York',
+//       country: 'USA',
+//     },
+//   };
+//
+// console.log(updatedUser);
+// // Ожидаемый вывод: { name: 'John', address: { city: 'Toronto', country: 'USA' } }
+//
+//
+// •	У вас есть массив и новый элемент, который вы хотите добавить в конец этого массива. Напишите функцию addElementToArray, которая принимает исходный массив и новый элемент, и возвращает новый массив, в котором новый элемент добавлен в конец(используйте spread опретаор для решения)
+//
+// Ожидаемый результат:
+//
+//
+//   const originalArray = [1, 2, 3, 4, 5];
+// const newArray = addElementToArray(originalArray, 6);
+//
+// console.log(newArray);
+// // Ожидаемый вывод: [1, 2, 3, 4, 5, 6]
+//
+//
+// Задачи для отработки деструктуризации:1) Извлечь значения свойств объекта в переменные name, age, city
+//
+//
+// const user = { name: 'John', age: 25, city: 'New York' };
+//
+//
+// и вывести в консоль эти переменные
+//
+// console.log(name);  // 'John'
+// console.log(age);   // 25
+// console.log(city);  // 'New York'
+//
+//
+// 2) Извлечь значения из массива в переменные secondFruit, thirdFruit, а первую переменную пропустить
+//
+// const fruits = ['apple', 'banana', 'orange'];
+//
+//
+// и вывести в консоль эти переменные
+//
+//
+// console.log(secondFruit);  // 'banana'
+// console.log(thirdFruit);   // 'orange'
+//
+//
+// 3) Использовать деструктуризацию в параметрах функции
+//
+// const person = { name: 'Alice', age: 30 };
+//
+// // Деструктуризация в параметрах функции
+// function printPersonDetails(тут применить деструктуризацию надо) {
+//   console.log(`Name: ${name}, Age: ${age}`);
+// }
+//
+// printPersonDetails(person);  // Вывод: Name: Alice, Age: 30
+//
+// 4) Установите значение по умолчанию для свойства year которого нет в объекте car
+//
+// const car = { brand: 'Toyota', model: 'Camry' };
+//
+// выведите в консоль его
+//
+//
+// console.log(brand);  // 'Toyota'
+// console.log(model);  // 'Camry'
+// console.log(year);   // 2022 (значение по умолчанию)
+//
+//
+// 5) Извлечь значения из массива объектов
+//
+//
+// const students = [
+//   { name: 'Alex', grade: 'A' },
+//   { name: 'Emma', grade: 'B' },
+//   { name: 'Chris', grade: 'C' },
+// ];
+//
+//
+// и вывести их в консоль
+//
+//
+// console.log(student1);  // 'Alex'
+// console.log(student3);  // 'Chris'
+//
+//
+// 6) Установите значение по умолчанию для свойства age которого нет в объекте person
+// и переименовать переменные, чтобы достать значение с свойства firstName
+//
+//
+// const person = { firstName: 'Max', lastName: 'Johnson' };
+//
+// const firstName = 'first Name: Nina';
+// const lastName = 'last Name: Ivanov;
+//
+//
+// и вывести результат в консоль
+//
+// console.log(тут название вашей новой перемееной вместо firstName); // 'Max'
+// console.log(тоже самое с lastName сделать); // 'Johnson'
+// console.log(age); // 25 (значение по умолчанию)
+//
+//
+//
 
-
-console.log(object);
-console.log(newObject);
+// Задачи на закрепление ссылочного типа данных и spread оператора:
+//
+//   •	Без запуска кода проговорите что тут происходит и что будет в консоли
+//
+// const a = {}; //1234
+// const b = {};// 4321
+// const c = a; //1234
+// const d = c; //1234
+// //
+// console.log(a === b); // false
+// console.log(a === c); // true
+// console.log(c === d); // true
+// console.log(a === c); // true
+// 
+// 	•	Что будет в консоль логах, ответьте без запуска кода и ответьте на вопрос
+//
+//
+// const a = {};
+// const b = a;
+// b['test'] = 'test value';
+//
+// console.log(b === a);
+// console.log(a);
+// // смутриурет ли объект a?
+//
+//
+// •	У вас есть объект пользователя с информацией о его имени и адресе. Обновите значение города в адресе пользователя(сделайте это иммутабельно, используя spread оператор)
+//
+// Исходный объект и ожидаемый результат:
+//   const user = {
+//     name: 'John',
+//     address: {
+//       city: 'New York',
+//       country: 'USA',
+//     },
+//   };
+//
+// console.log(updatedUser);
+// // Ожидаемый вывод: { name: 'John', address: { city: 'Toronto', country: 'USA' } }
+//
+//
+// •	У вас есть массив и новый элемент, который вы хотите добавить в конец этого массива. Напишите функцию addElementToArray, которая принимает исходный массив и новый элемент, и возвращает новый массив, в котором новый элемент добавлен в конец(используйте spread опретаор для решения)
+//
+// Ожидаемый результат:
+//
+//
+//   const originalArray = [1, 2, 3, 4, 5];
+// const newArray = addElementToArray(originalArray, 6);
+//
+// console.log(newArray);
+// // Ожидаемый вывод: [1, 2, 3, 4, 5, 6]
+//
+//
+// Задачи для отработки деструктуризации:1) Извлечь значения свойств объекта в переменные name, age, city
+//
+//
+// const user = { name: 'John', age: 25, city: 'New York' };
+//
+//
+// и вывести в консоль эти переменные
+//
+// console.log(name);  // 'John'
+// console.log(age);   // 25
+// console.log(city);  // 'New York'
+//
+//
+// 2) Извлечь значения из массива в переменные secondFruit, thirdFruit, а первую переменную пропустить
+//
+// const fruits = ['apple', 'banana', 'orange'];
+//
+//
+// и вывести в консоль эти переменные
+//
+//
+// console.log(secondFruit);  // 'banana'
+// console.log(thirdFruit);   // 'orange'
+//
+//
+// 3) Использовать деструктуризацию в параметрах функции
+//
+// const person = { name: 'Alice', age: 30 };
+//
+// // Деструктуризация в параметрах функции
+// function printPersonDetails(тут применить деструктуризацию надо) {
+//   console.log(`Name: ${name}, Age: ${age}`);
+// }
+//
+// printPersonDetails(person);  // Вывод: Name: Alice, Age: 30
+//
+// 4) Установите значение по умолчанию для свойства year которого нет в объекте car
+//
+// const car = { brand: 'Toyota', model: 'Camry' };
+//
+// выведите в консоль его
+//
+//
+// console.log(brand);  // 'Toyota'
+// console.log(model);  // 'Camry'
+// console.log(year);   // 2022 (значение по умолчанию)
+//
+//
+// 5) Извлечь значения из массива объектов
+//
+//
+// const students = [
+//   { name: 'Alex', grade: 'A' },
+//   { name: 'Emma', grade: 'B' },
+//   { name: 'Chris', grade: 'C' },
+// ];
+//
+//
+// и вывести их в консоль
+//
+//
+// console.log(student1);  // 'Alex'
+// console.log(student3);  // 'Chris'
+//
+//
+// 6) Установите значение по умолчанию для свойства age которого нет в объекте person
+// и переименовать переменные, чтобы достать значение с свойства firstName
+//
+//
+// const person = { firstName: 'Max', lastName: 'Johnson' };
+//
+// const firstName = 'first Name: Nina';
+// const lastName = 'last Name: Ivanov;
+//
+//
+// и вывести результат в консоль
+//
+// console.log(тут название вашей новой перемееной вместо firstName); // 'Max'
+// console.log(тоже самое с lastName сделать); // 'Johnson'
+// console.log(age); // 25 (значение по умолчанию)
+//
+//
+//
 
 
 
