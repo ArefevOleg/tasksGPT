@@ -404,12 +404,12 @@ const arr1 = [1,2,3,4,5];
 //
 //   •	Без запуска кода проговорите что тут происходит и что будет в консоли
 //
-const a = {}; //1234
-const b = {};// 4321
-const c = a; //1234
-const d = c; //1234
-//
-console.log(a === b); // false
+// const a = {}; //1234
+// const b = {};// 4321
+// const c = a; //1234
+// const d = c; //1234
+// //
+// console.log(a === b); // false
 // console.log(a === c); // true
 // console.log(c === d); // true
 // console.log(a === c); // true
