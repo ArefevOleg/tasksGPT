@@ -6,15 +6,11 @@ import "./map/map";
 import "./script"
 
 
-
-
-
 function App() {
-  return (
-  <div className="wrapper">
-
-  </div>
-  );
+    return (
+        <div>
+        </div>
+    );
 }
 
 export default App;

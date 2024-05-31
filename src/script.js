@@ -550,7 +550,7 @@ const arr1 = [1,2,3,4,5];
 // console.log(a === c); // true
 // console.log(c === d); // true
 // console.log(a === c); // true
-// 
+// //
 // 	•	Что будет в консоль логах, ответьте без запуска кода и ответьте на вопрос
 //
 //
@@ -675,16 +675,104 @@ const arr1 = [1,2,3,4,5];
 //
 
 
+// const age = Number(prompt("Введите возраст"))
+// document.write(`Возраст пользователя: ${age}`)
+// // const event = () => {
+// //   console.log(age)
+// // }
+
+// ------------------------
 
 
 
+// Задачи для отработки деструктуризации:) Извлечь значения свойств объекта в переменные name, age, city
+// const user1 = { name: 'John', age: 25, city: 'New York' };
+// const {name, age, city} = user1
+// console.log(name)
+// console.log(age)
+// console.log(city)
+//
+//
+// и вывести в консоль эти переменные
+//
+// console.log(name);  // 'John'
+// console.log(age);   // 25
+// console.log(city);  // 'New York'
+//
+//
+// 2) Извлечь значения из массива в переменные secondFruit, thirdFruit, а первую переменную пропустить
+//
+// const fruits = ['apple', 'banana', 'orange'];
+//
+// const secondFruit = fruits[1]
+// const thirdFruit = fruits[2]
 
+//
+//
+// и вывести в консоль эти переменные
+//
+//
+// console.log(secondFruit);  // 'banana'
+// console.log(thirdFruit);   // 'orange'
+// //
+//
+// 3) Использовать деструктуризацию в параметрах функции
+//
+// const person = { name: 'Alice', age: 30 };
+// //
+// // // Деструктуризация в параметрах функции
+// function printPersonDetails({name, age}) {
+//   console.log(`Name: ${name}, Age: ${age}`);
+// }
 
-
-
-
-
-
+//
+// printPersonDetails(person);  // Вывод: Name: Alice, Age: 30
+//
+// 4) Установите значение по умолчанию для свойства year которого нет в объекте car
+//
+// const car = { brand: 'Toyota', model: 'Camry', year: 2022 };
+// const {brand, model, year} =car
+// //
+// // выведите в консоль его
+// //
+// //
+// console.log(brand);  // 'Toyota'
+// console.log(model);  // 'Camry'
+// console.log(year);   // 2022 (значение по умолчанию)
+//
+//
+// 5) Извлечь значения из массива объектов
+//
+//
+const students = [
+  { name: 'Alex', grade: 'A' },
+  { name: 'Emma', grade: 'B' },
+  { name: 'Chris', grade: 'C' },
+];
+const student1[0].
+//
+// и вывести их в консоль
+//
+//
+// console.log(student1);  // 'Alex'
+// console.log(student3);  // 'Chris'
+//
+//
+// 6) Установите значение по умолчанию для свойства age которого нет в объекте person
+// и переименовать переменные, чтобы достать значение с свойства firstName
+//
+//
+// const person = { firstName: 'Max', lastName: 'Johnson' };
+//
+// const firstName = 'first Name: Nina';
+// const lastName = 'last Name: Ivanov;
+//
+//
+// и вывести результат в консоль
+//
+// console.log(тут название вашей новой перемееной вместо firstName); // 'Max'
+// console.log(тоже самое с lastName сделать); // 'Johnson'
+// console.log(age); // 25 (значение по умолчанию)
 
 
 
