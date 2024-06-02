@@ -744,16 +744,17 @@ const arr1 = [1,2,3,4,5];
 // 5) Извлечь значения из массива объектов
 //
 //
-const students = [
-  { name: 'Alex', grade: 'A' },
-  { name: 'Emma', grade: 'B' },
-  { name: 'Chris', grade: 'C' },
-];
-const student1[0].
-//
-// и вывести их в консоль
-//
-//
+// const students = [
+//   { name: 'Alex', grade: 'A' },
+//   { name: 'Emma', grade: 'B' },
+//   { name: 'Chris', grade: 'C' },
+// ];
+// const student1 = students[0].name
+// const student3 = students[2].name
+// //
+// // и вывести их в консоль
+// //
+// //
 // console.log(student1);  // 'Alex'
 // console.log(student3);  // 'Chris'
 //
@@ -762,19 +763,20 @@ const student1[0].
 // и переименовать переменные, чтобы достать значение с свойства firstName
 //
 //
-// const person = { firstName: 'Max', lastName: 'Johnson' };
-//
-// const firstName = 'first Name: Nina';
-// const lastName = 'last Name: Ivanov;
-//
-//
-// и вывести результат в консоль
-//
-// console.log(тут название вашей новой перемееной вместо firstName); // 'Max'
-// console.log(тоже самое с lastName сделать); // 'Johnson'
+// const person = { firstName: 'Max', lastName: 'Johnson', age: 25 };
+// const {firstName, lastName, age} = person
+// //
+// const name1 = firstName;
+// const name2 = lastName;
+// //
+// //
+// // и вывести результат в консоль
+// //
+// console.log(name1); // 'Max'
+// console.log(name2); // 'Johnson'
 // console.log(age); // 25 (значение по умолчанию)
-
-
+//
+//
 
 
 
