@@ -158,16 +158,48 @@
 // ([82, 15, 6, 38, 35]), [6, 82, 76])
 // const ages = [82, 15, 6, 38, 35];
 // function differenceInAges(ages){
+//1
 //   const old = Math.max(...ages)
 //   const child = Math.min(...ages)
 //   const oldChild = old - child
 //   return [child, old, oldChild];
-//
+//2
 //   // const min = Math.min(...ages);
 //   // const max = Math.max(...ages);
 //   //
 //   // return [min, max, max-min];
+//3
+// return [Math.min(...ages),Math.max(...ages),Math.max(...ages)-Math.min(...ages)]
 // }
 //
 // console.log(differenceInAges(ages))
 ////////
+
+// помогите! Джейсон не может найти свой учебник!
+// До начала теста осталось два дня, а все учебники Джейсона вышли из строя!
+// Помогите ему отсортировать список (ArrayList на java) учебников по предметам,
+// чтобы он мог подготовиться к тесту.
+//
+//   Сортировка не должна быть чувствительной к регистру
+// const textbooks = ['Algebra', 'english', 'Geometry', 'history']
+// function sorter (textbooks) {
+// return
+// }
+//
+// console.log(sorter)
+////////////////
+// Напишите функцию для преобразования имени в инициалы.
+// В этом ката используются только два слова с одним пробелом между ними.
+//В результате должны получиться две заглавные буквы, разделенные точкой.
+//   Это должно выглядеть следующим образом:
+//   Сэм Харрис => S.H
+// патрик Фини => П.Ф
+
+// function abbrevName(name){
+//
+// }
+//
+// const fo = (a, b) => {
+//   return a / b ? a / b : false
+// }
+// console.log(fo(4, -2))
