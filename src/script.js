@@ -2,47 +2,48 @@
 // качестве аргумента и возвращает "Четное" для четных чисел или "Нечетное"
 // для нечетных чисел.
 
+
 // Function declaration
 
-function calculateNumber(initialValue) {
-  // initialValue - параметр функции типа number можно передать колбэк
-  let x = initialValue;
-  x = x + 100;
-  x = x / 5;
+// function calculateNumber(initialValue) {
+//   // initialValue - параметр функции типа number можно передать колбэк
+//   let x = initialValue;
+//   x = x + 100;
+//   x = x / 5;
 
-  return x;
-}
+//   return x;
+// }
 
-const result = calculateNumber(5334535);
-const result1 = calculateNumber(5335);
-// console.log(result);
-// console.log(result1);
+// const result = calculateNumber(5334535);
+// const result1 = calculateNumber(5335);
+// // console.log(result);
+// // console.log(result1);
 
-function calculateCercleArea(cercleRadius) {
-  // initialValue - параметр функции типа number
-  return 3.14 * cercleRadius ** 2; // параметр - это переменная
-} // функция может принимать сколько угодно параметров
+// function calculateCercleArea(cercleRadius) {
+//   // initialValue - параметр функции типа number
+//   return 3.14 * cercleRadius ** 2; // параметр - это переменная
+// } // функция может принимать сколько угодно параметров
 
-const cercleArea1 = calculateCercleArea(6); // (6) - это аргумент (значение переменной, которе мы передаем в функцию)
-// console.log(cercleArea1);
+// const cercleArea1 = calculateCercleArea(6); // (6) - это аргумент (значение переменной, которе мы передаем в функцию)
+// // console.log(cercleArea1);
 
-const cercleArea2 = calculateCercleArea(16.2);
+// const cercleArea2 = calculateCercleArea(16.2);
 
-// console.log(cercleArea2);
+// // console.log(cercleArea2);
 
-function createHTMLElement(tag = "button", text = "отправить", id = null) {
-  // нужно сохранять порядок записи параметров
-  const element = document.createElement(tag);
-  if (id) {
-    // если id не null или undefined то присваиваем элементу id
-    element.id = id;
-  }
-  element.innerHTML = text;
+// function createHTMLElement(tag = "button", text = "отправить", id = null) {
+//   // нужно сохранять порядок записи параметров
+//   const element = document.createElement(tag);
+//   if (id) {
+//     // если id не null или undefined то присваиваем элементу id
+//     element.id = id;
+//   }
+//   element.innerHTML = text;
 
-  return element;
-}
+//   return element;
+// }
 
-const h1element = createHTMLElement("h1", "просто текст"); // аргументы идут в такомже порядке как и параметры
+// const h1element = createHTMLElement("h1", "просто текст"); // аргументы идут в такомже порядке как и параметры
 // console.log(h1element)                                  // если мы не хотим передавать аргументы, то мы можем использовать null
 // document.body.append(h1element)
 
@@ -951,13 +952,13 @@ const arr1 = [1, 2, 3, 4, 5];
 // в массиве, удовлетворяющий заданному условию.
 // Пример:
 // Входной массив: [10, 20, 30, 40, 50]
-const arr5 = ["apple","orange","banana"]
-const findFirstElement = (arr) => {
-  const res = arr.find(el => { return el == "o"})
-  return res
-}
-
-console.log(findFirstElement(arr5))
+// const arr5 = ["apple","orange","banana"]
+// const findFirstElement = (arr) => {
+//   const res = arr.find(el => { return el.startsWith("o")})
+//   return res
+// }
+//
+// console.log(findFirstElement(arr5))
 // Условие: Найти первый элемент больше 25
 // Выходные данные: 30
 //
@@ -977,12 +978,17 @@ console.log(findFirstElement(arr5))
 // console.log(firstFruitStartingWithO); // Output: "orange"
 //
 //
+
 // includes():
 //
 // Напишите функцию JavaScript, которая проверяет, присутствует ли заданный элемент в массиве.
+// Пример:
 //
-//   Пример:
-//
+// const includesFo = (arr) => {
+//   const res = arr.includes("апельсин")
+//   return res
+// }
+// console.log(includesFo(["яблоко", "банан", "апельсин", "киви"]))
 // Входной массив: [1, 2, 3, 4, 5]
 // Элемент для проверки: 3
 // Выход: true
@@ -991,9 +997,10 @@ console.log(findFirstElement(arr5))
 //   Элемент для проверки: "виноград"
 // Выход: false
 //
-// Необходимо написать функцию checkElement, которая принимает на вход массив и элемент и возвращает true, если элемент присутствует в массиве, и false в противном случае.
+// Необходимо написать функцию checkElement, которая принимает на вход массив и элемент и возвращает true,
+// если элемент присутствует в массиве, и false в противном случае.
 //
-//   Ожидаемый результат:
+// Ожидаемый результат:
 //
 //
 //   let numbers = [1, 2, 3, 4, 5];
@@ -1004,9 +1011,25 @@ console.log(findFirstElement(arr5))
 //
 //
 // filter():
-// Напишите функцию JavaScript, которая фильтрует массив чисел и возвращает только те элементы, которые больше заданного значения.
-//
-//   Пример:
+// Напишите функцию JavaScript, которая фильтрует массив чисел и возвращает только те элементы,
+// которые больше заданного значения.
+// const filterGreaterThan = (arr) => {
+//   const res = arr.filter(el => el > 25)
+//   return res
+// }
+
+// const filterGreaterThan = (arr) => {
+//   const res = arr.filter(el => el !== "TypeScript")
+//   return res
+// }
+// console.log(filterGreaterThan(["Java", "TypeScript", "C#", "JavaScript", "Julia"]))
+// const languagesSkills = ["Java", "TypeScript", "C#", "JavaScript", "Julia"];
+// const filterLanguages = languagesSkills.filter(el => {
+//   return el.startsWith("J")
+// })
+// console.log(filterLanguages)
+
+//  Пример:
 //
 // Входной массив: [10, 20, 30, 40, 50]
 // Значение для фильтрации: 25
@@ -1016,16 +1039,22 @@ console.log(findFirstElement(arr5))
 // Значение для фильтрации: 20
 // Выходные данные: [25, 35, 45]
 //
-// Необходимо написать функцию filterGreaterThan, которая принимает на вход массив чисел и значение и возвращает новый массив, содержащий только элементы, превышающие указанное значение.
+// Необходимо написать функцию filterGreaterThan, которая принимает на вход массив чисел и
+// значение и возвращает новый массив, содержащий только элементы, превышающие указанное значение.
 //
 //
-//   Ожидаемый результат:
+// Ожидаемый результат:
 //
-//
-//   let numbers1 = [10, 20, 30, 40, 50];
-// let numbers2 = [5, 15, 25, 35, 45];
-//
-// console.log(filterGreaterThan(numbers1, 25)); // Output: [30, 40, 50]
+// let numbers1 = [10, 20, 30, 40, 50];
+// const filterGreaterThan = (numbers1) => {
+//   const res = numbers1.filter(el => el > 25)
+//   return res
+// }
+// //
+// // let numbers1 = [10, 20, 30, 40, 50];
+// // let numbers2 = [5, 15, 25, 35, 45];
+// //
+// console.log(filterGreaterThan(numbers1)); // Output: [30, 40, 50]
 // console.log(filterGreaterThan(numbers2, 20)); // Output: [25, 35, 45]
 //
 //
@@ -1033,14 +1062,25 @@ console.log(findFirstElement(arr5))
 //
 // Напишите функцию JavaScript, которая сортирует массив объектов в алфавитном порядке на основе заданного свойства.
 //
-//   Ожидаемый результат:
+// let people3 = [
+//   { name: 'John', age: 30 },
+//   { name: 'Alice', age: 25 },
+//   { name: 'Bob', age: 35 },
+// ];
+//
+// // let numbers = [5, 2, 8, 1, 4];
+// const numbers = [-100, 10, 25, 30, 45, 44, 1, 2, 11];
+// const sort = people3.sort((a, b) => a.name.localeCompare(b.name))
+// const sortAlphabeticallyByProperty = (a, b) => {
+//   return b -a
+// }
+// console.log(people3)
+// console.log(numbers.sort(sortAlphabeticallyByProperty))
+// console.log(people3.sort(sortAlphabeticallyByProperty))
+// Ожидаемый результат:
 //
 //
-//   let people = [
-//     { name: 'John', age: 30 },
-//     { name: 'Alice', age: 25 },
-//     { name: 'Bob', age: 35 },
-//   ];
+
 //
 // console.log(sortAlphabeticallyByProperty(people, 'name')); // [ { name: 'Alice', age: 25 },{ name: 'Bob', age: 35 },{ name: 'John', age: 30 }]
 //
@@ -1073,44 +1113,77 @@ console.log(findFirstElement(arr5))
 //     { value: 2, name: 'Option 2' },
 //     { value: 3, name: 'Option 3' },
 //   ];
-//
+
 // Ожидаемый результат:
 //
 //
-//
-//   console.log(formattedData); // [
-// //   { value: 1, label: 'Option 1' },
-// // { value: 2, label: 'Option 2' },
-// // { value: 3, label: 'Option 3' }
+// const  formattedData = (data) => {
+//   const res = data.map(el => {
+//     el.label = el.name
+//     delete el.name
+//     return  el
+//     })
+//    return res
+// }
+//   console.log(formattedData(data)); // [
+//   { value: 1, label: 'Option 1' },
+// { value: 2, label: 'Option 2' },
+// { value: 3, label: 'Option 3' }
 // // ]
-//
-//
-//
-// •	У вас есть массив объектов, и вы хотите добавить к каждому объекту новое свойство на основе существующих данных. Этим свойством будет discountPrice, где значение будет вычисляться таким образом price * 0.9
-//
+// •	У вас есть массив объектов, и вы хотите добавить к каждому объекту новое свойство на основе
+// существующих данных. Этим свойством будет discountPrice, где значение будет вычисляться таким образом price * 0.9
 // Исходный массив:
-//
-//
-//
-//   let products = [
-//     { id: 1, name: 'Apple', price: 1.99 },
-//     { id: 2, name: 'Banana', price: 0.99 },
-//     { id: 3, name: 'Orange', price: 2.49 },
-//   ];
-//
-//
-//
-// Ожидаемый результат:
-//
-//
-//
-//   console.log(productsWithDiscount); // [
-// //   { id: 1, name: 'Apple', price: 1.99, с: 1.791 },
+// let products = [
+//   { id: 1, name: 'Apple', price: 1.99 },
+//   { id: 2, name: 'Banana', price: 0.99 },
+//   { id: 3, name: 'Orange', price: 2.49 },
+// ];
+// const productsWithDiscount = (products) => {
+//   const res = products.map(el => {
+//   return {...el, "discountedPrice": el.price * 0.9}
+//   })
+//   return res
+// }
+// // // Ожидаемый результат:
+//   console.log(productsWithDiscount(products)); // [
+// //   { id: 1, name: 'Apple', price: 1.99, discountedPrice: 1.791 },
 // //   { id: 2, name: 'Banana', price: 0.99, discountedPrice: 0.891 },
 // //   { id: 3, name: 'Orange', price: 2.49, discountedPrice: 2.241 }
 // // ]
 //
 //
+// let a = 5
+// let b = 3
+//  // [a, b] = [b, a]
+// a = a + b // 8
+// b = a - b // 5
+// a = a - b // 3
+// console.log(a)
+// console.log(b)
+
+// const arr22 = [
+//   [ 0, 1, 2, 3, 45 ],
+//   [ 10,11,12,13,14 ],
+//   [ 20,21,22,23,24 ],
+//   [ 30,31,32,33,34 ]
+// ]
+// console.log(arr22.length -1)
+// function toCsvText(arr) {
+//   return arr.reduce((acc, el, i) => {
+//     if (i === arr.length -1) {
+//       return acc + el.join()
+//     } else {
+//       return acc + el.join() + "\n"
+//     }
+//
+//   }," ")
+// }
+//
+// console.log(toCsvText(arr22))
+
+// console.log(arr22.join("\n"))
+
+
 //
 // Дополнительные задачки:
 //
@@ -1461,8 +1534,236 @@ console.log(findFirstElement(arr5))
 // // [{ name: 'Bob', age: 25 }, { name: 'Alice', age: 30 }, { name: 'Charlie', age: 35 }]
 //
 
+// const words = ['hello', 'world', 'this', 'is', 'great'];
+//
+// function smash (words) {
+//   return words.join(" ")
+// };
+// console.log(smash(words))
+//
+// Напишите функцию, которая вычисляет среднее значение чисел в заданном списке.
+// Примечание. Пустые массивы должны возвращать 0.
+// const array1 = [1, 2, 3, 4, 5]
+// const array2 = []
+//
+// function findAverage(array) {
+//   if (array.length === 0) return 0
+//   const res = array.reduce((a, b) => (a + b)) / array.length
+//   return res
+// }
+//
+// // console.log(!![])
+// // array.reduce((a, b) => (a + b)) / array.length
+// console.log(findAverage(array2))
+//
+// Завершите функцию square sum так, чтобы она возводила в квадрат каждое переданное
+// ей число, а затем суммировала результаты.
+//
+//  Например, для [1, 2, 2] должно быть возвращено 9, потому что
+// const arr22 = [0, 3, 4, 5]
+// function squareSum(numbers){
+//   if (numbers.length === 0) return 0
+//   const res = numbers.map(el => {
+//     const sum = el * el
+//     return sum
+//   })
+// return res.reduce((a, b) => (a + b))
+// }
+//
+// console.log(squareSum(arr22))
+
+// Ваши одноклассники попросили вас скопировать для них некоторые документы.
+// Вы знаете, что есть n одноклассников, а в документах m страниц.
+//   Ваша задача - подсчитать, сколько чистых страниц вам нужно.
+//   Если n < 0 или m < 0, верните 0.
+
+// function paperwork(n, m) {
+// if(n <= 0 || m < 0) return 0
+//   return n * m
+// }
+//
+// console.log(paperwork(-5, 5))
+//
+// Создайте функцию, которая всегда возвращает значение True/истинность
+// для каждого элемента в заданном списке.
+// Однако, если элементом является слово "flick", переключитесь на то,
+// чтобы всегда возвращать противоположное логическое значение.
+// const arr88 = ['codewars', 'flick', 'code', 'wars'] //[True, False, False, False]
+// const arr89 =  ['flick', 'chocolate', 'adventure', 'sunshine']//[False, False, False, False]
+// const arr83 =  ['bicycle', 'jarmony', 'flick', 'sheep', 'flick']//[True, True, False, False, True]
+// function flickSwitch(arr){
+// let flick = true;
+//   return arr.map(el => el == 'flick' ? flick = !flick : flick)
+// }
+// console.log(flickSwitch(arr88))
 
 
+// function flickSwitch(arr){
+//   const newArr = []
+//   let a = true
+//   arr.forEach(el => {
+//     if(el == 'flick') {
+//       a = !a
+//     }
+//     newArr.push(a)
+//   })
+// return newArr
+// }
+//
+// let a = 1;
+// let b = 2;
+// console.log(a)
+// [a, b] = [b, a];
+// console.log(a)
+
+// let a = true
+// a = !a
+// console.log(a)
+
+// Создайте боевую функцию, которая принимает текущее здоровье игрока
+// и количество полученного урона и возвращает новое здоровье игрока.
+// Здоровье не может быть меньше 0.
+
+// function combat(health, damage) {
+// const res = health - damage
+// return res < 0 ? 0 : res
+// }
+//
+// console.log(combat(100, 5))
+
+// Напишите простую функцию, которая принимает в качестве параметра объект даты
+// и возвращает логическое значение, указывающее, сегодняшняя дата или нет.
+// Убедитесь, что ваша функция не возвращает ложное срабатывание, проверяя только день.
+
+// function isToday(date) {
+// return new Date() === date ? true : false
+// }
+//
+//
+// console.log(isToday(new Date()))
+//
+
+// Если задан массив, добавьте все числовые элементы и верните двоичный эквивалент этой суммы;
+// чтобы код был безупречен, все, что угодно, кроме числа, должно быть добавлено как 0,
+// поскольку оно не может быть добавлено.
+// Если ваш язык может обрабатывать двоичные файлы с плавающей точкой,
+// предположите, что массив не будет содержать float или doubles.
+
+// arr2bin([1,2]) == '11'
+// arr2bin([1,2,'a']) == '11'
+// arr2bin([]) == '0'
+//
+// ПРИМЕЧАНИЕ: NaN также является числом в javascript для десятичной, двоичной и n-арной базы
+
+// function arr2bin(arr){
+// return
+// }
+//
+// console.log(arr2bin())
+
+// Учитывая строку цифр, вы должны заменить любую цифру ниже 5 на «0»,
+// а любую цифру от 5 и выше на «1». Верните полученную строку.
+// Примечание: ввод никогда не будет пустой строкой.
+// const str = "32357895345677213"
+// function fakeBin(x){
+//  const newStr = x.split("").map(Number => Number >= 5 ? Number = 1 : Number = 0)
+//   return newStr.join("")
+// }
+//
+// console.log(fakeBin(str))
+
+// Учитывая массив целых чисел, ваше решение должно найти наименьшее целое число.
+//   Например:
+// Учитывая [34, 15, 88, 2], ваше решение вернет значение 2
+// Учитывая [34, -345, -1, 100], ваше решение вернет значение -345
+// Для целей этого ката вы можете предположить, что предоставленный массив не будет пустым.
+
+// function findSmallestInt(arr) {
+//   const sortNew = ((a,b) => {return a - b})
+//   const res = arr.sort(sortNew)
+// return res[0]
+// }
+// const findSmallestInt = arr => Math.min(...arr)
+// console.log(findSmallestInt([-10, 34, 15, 88, 2]))
+
+// Я новичок в программировании и теперь хочу получить сумму двух массивов...
+// Фактически сумму всех их элементов. Я буду признателен за вашу помощь. P.S.
+// Каждый массив содержит только целые числа. Выходные данные тоже являются числом.
+// const arr11 = [1, 2, 3]
+// const arr22 = [4, 5, 6]
+//
+// function arrayPlusArray(arr1, arr2) {
+//   return arr1.concat(arr2).reduce((a, b) => (a + b))
+// }
+//
+// console.log(arrayPlusArray(arr11, arr22))
+
+// Вы спрашиваете маленькую девочку: "Сколько тебе лет?" Она всегда отвечает: "x лет",
+// где x - случайное число от 0 до 9.
+// Напишите программу, которая возвращает возраст девочки (0-9) в виде целого числа.
+// Предположим, что тестовая строка ввода всегда является допустимой. Например,
+// тестовым вводом может быть "1 год" или "5 лет". Первым символом в строке всегда является число.
+// const inputString = "4 years old"
+//
+// function getAge(inputString){
+// // const x1 = inputString.charAt(0)
+// //   if (x1 == x1) {
+// //     return x1
+// //   }
+//   return inputString.charAt(0)
+// }
+// // const x1 = Math.floor(Math.random() * 10)
+// // console.log(inputString.charAt(0))
+// console.log(getAge(inputString))
+//
 
 
+// const name1 = "Oleg"
+// const age = 39
+// const str = `Hello ${name1}, age: ${age}`
+// console.log(str)
+//
 
+// Камень ножницы Бумага Давайте играть! Вы должны вернуть,
+// какой игрок выиграл! В случае ничьей верните Draw!.
+// "scissors", "paper" --> "Player 1 won!"
+// "scissors", "rock" --> "Player 2 won!"
+// "paper", "paper" --> "Draw!"
+
+// const rps = (p1, p2) => {
+//   if (p1 === p2) {
+//     return "Draw!"
+//   } else if (p1 === "scissors" && p2 === "paper") {
+//     return "Player 1 won!"
+//   } else if (p1 == "scissors" && p2 == "rock") {
+//     return "Player 2 won!"
+//   } else if (p1 == "paper" && p2 == "rock") {
+//     return "Player 1 won!"
+//   } else if (p1 == "paper" && p2 == "scissors") {
+//     return "Player 2 won!"
+//   } else if (p1 == "rock" && p2 == "scissors") {
+//     return "Player 1 won!"
+//   } else if (p1 == "rock" && p2 == "paper") {
+//     return "Player 2 won!"
+//   }
+// };
+
+// console.log(rps("scissors", "rock"))
+
+// Создайте функцию, которая принимает на вход два целых числа в виде
+// строки и выводит сумму (также в виде строки):
+
+// function sumStr(a,b) {
+//   return (Number(a) + Number(b)).toString()
+// }
+//
+// console.log(sumStr("34","5"))
+
+// Завершите решение так, чтобы оно перевернуло переданную в него строку.
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+// function solution(str){
+// return str.split('').reverse().join('')
+// }
+//
+// console.log(solution('world'))
